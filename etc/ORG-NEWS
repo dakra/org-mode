@@ -96,6 +96,15 @@ The face ~org-agenda-calendar-daterange~ is used to show entries with
 a date range in the agenda.  It inherits from the default face in
 order to remain backward-compatible.
 
+*** New ~org-babel-clojurescript-backend~ option to choose ClojureScript backend
+
+Before, a ClojureScript source block used the same backend as Clojure,
+configured in ~org-babel-clojure-backend~ and relied on an undocumented
+~:target~ paramter.
+
+Now, there's ~org-babel-clojurescript-backend~ to determine the
+backend used for evaluation of ClojureScript.
+
 ** New features
 *** ~org-metaup~ and ~org-metadown~ now act on headings in region
 
